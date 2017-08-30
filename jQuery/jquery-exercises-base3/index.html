@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 3</title>
+  <script src="jquery-2.2.4.js"></script>
+      <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#addMe").click(function(){
+                var counter = parseInt($("#hiddenVal").val());
+                counter++;
+                $("#hiddenVal").val(counter);
+                $("#theCount").text(counter);
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <div id="theCount"></div>
+    <br/>
+    <button id="addMe">Button</button>
+    <input type="hidden" id="hiddenVal" value="0">
+
+</body>
+</html>
